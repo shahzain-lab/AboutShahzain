@@ -1,0 +1,53 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\shahzain\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add -D gatsby-plugin-postcss tailwindcss@latest postcss@latest autoprefixer@latest
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\shahzain\AppData\Local\Microsoft\WindowsApps;C:\Users\shahzain\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\shahzain\AppData\Local\GitHubDesktop\bin;C:\Users\shahzain\AppData\Roaming\npm;C:\Program Files (x86)\GitHub CLI\
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  14.18.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:71:26)
+
+npm manifest: 
+  {
+    "name": "aboutshahzain",
+    "version": "1.0.0",
+    "private": true,
+    "description": "aboutshahzain",
+    "author": "Syed ZainUlAbideen",
+    "keywords": [
+      "gatsby"
+    ],
+    "scripts": {
+      "develop": "gatsby develop",
+      "start": "gatsby develop",
+      "build": "gatsby build",
+      "serve": "gatsby serve",
+      "clean": "gatsby clean"
+    },
+    "dependencies": {
+      "gatsby": "^4.3.0",
+      "gatsby-plugin-image": "^2.3.0",
+      "gatsby-plugin-sharp": "^4.3.0",
+      "gatsby-source-contentful": "^7.1.0",
+      "gatsby-source-filesystem": "^4.3.0",
+      "gatsby-transformer-sharp": "^4.3.0",
+      "react": "^17.0.1",
+      "react-dom": "^17.0.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
