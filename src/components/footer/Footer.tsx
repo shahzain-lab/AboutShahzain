@@ -13,7 +13,7 @@ import { SiGmail } from 'react-icons/si';
 const Footer = () => {
     const date = new Date().getFullYear();
     return (//
-        <footer className="bg-black absolute bottom-0 w-full">
+        <footer className="bg-black w-full">
             <main className="w-full p-6 flex justify-around items-center">
                 <div className="center relative">
                     <h2 className="text-white font-bold leading-normal text-5xl capitalize ">Helping people making their website interactive and user friendly.</h2>
@@ -44,19 +44,18 @@ const Footer = () => {
                         className="w-1/5"
                     />
                     <div className="w-1/3 flex justify-around items-center">
-                        <a target="_blank" className="rounded-full p-2 border-2 border-sky-600 text-sky-600" href="https://"><FaFacebookF /></a>
+                        <a target="_blank" className="rounded-full p-2 border-2 border-sky-600 text-sky-600" href="https://www.facebook.com/syed.zainulabideen.77398"><FaFacebookF /></a>
                         <a target="_blank" className="rounded-full p-2 border-2 border-pink-500 text-pink-500" href="https://"><GrInstagram /></a>
-                        <a target="_blank" className="rounded-full p-2 border-2 border-indigo-600 text-indigo-600" href="https://"><ImTwitter /></a>
-                        <a target="_blank" className="rounded-full p-2 border-2 border-blue-600 text-blue-600" href="https://"><ImLinkedin2 /></a>
-                        <a target="_blank" className="rounded-full p-2 border-2 border-cyan-800 text-cyan-800" href="https://"><BsGithub /></a>
-                        <a target="_blank" className="rounded-full p-2 border-2 border-red-600 text-red-600" href="https://"><SiGmail /></a>
-                        <a target="_blank" className="rounded-full p-2 border-2 border-lime-600 text-lime-600" href="https://"><GrGooglePlus /></a>
+                        <a target="_blank" className="rounded-full p-2 border-2 border-indigo-600 text-indigo-600" href="https://twitter.com/its_shahzain"><ImTwitter /></a>
+                        <a target="_blank" className="rounded-full p-2 border-2 border-blue-600 text-blue-600" href="https://www.linkedin.com/in/syed-zainulabideen009900/"><ImLinkedin2 /></a>
+                        <a target="_blank" className="rounded-full p-2 border-2 border-cyan-800 text-cyan-800" href="https://github.com/shahzain-lab"><BsGithub /></a>
+                        <a target="_blank" className="rounded-full p-2 border-2 border-red-600 text-red-600" href="shahzain30196@gmail.com"><SiGmail /></a>
+                        <a target="_blank" className="rounded-full p-2 border-2 border-lime-600 text-lime-600" href="https://myaccount.google.com/profile"><GrGooglePlus /></a>
                     </div>
                 </main>
-                <section className=" flex justify-around items-center">
-
+                <section className=" flex justify-around items-center text-zinc-400 py-4">
                     <div>
-                        <span>About Me</span>
+                        <span className="text-xl font-thin text-zinc-200">About Me</span>
                         <li>resume</li>
                         <li>Instagram</li>
                         <li>How I Built</li>
@@ -64,7 +63,7 @@ const Footer = () => {
                         <li>resume</li>
                     </div>
                     <div>
-                        <span>Resource</span>
+                        <span className="text-xl font-thin text-zinc-200">About Me</span>
                         <li>resume</li>
                         <li>Instagram</li>
                         <li>How I Built</li>
@@ -72,7 +71,7 @@ const Footer = () => {
                         <li>resume</li>
                     </div>
                     <div>
-                        <span>About Me</span>
+                        <span className="text-xl font-thin text-zinc-200">About Me</span>
                         <li>resume</li>
                         <li>Instagram</li>
                         <li>How I Built</li>
@@ -81,7 +80,7 @@ const Footer = () => {
                     </div>
                 </section>
             </div>
-            <h4 className="bg-black text-stone-400 py-2 w-full flex justify-around items-center capitalize">
+            <h4 className="bg-black tracking-wide text-stone-400 py-2 w-full flex justify-around items-center capitalize">
                 &copy; Copyright {date}.All rights reserved.
             </h4>
         </footer>

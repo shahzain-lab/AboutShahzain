@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 import logo from '../../assets/transLogo.png';
 
@@ -19,14 +20,14 @@ const Navbar = () => {
                     <span className="h-1 w-1/1 duration-300 group-hover:bg-fuchsia-600"></span>
                 </div>
                 <div className="flex flex-col group duration-75">
-                    <span className="decoration-fuchsia-600">What I Built</span>
+                    <Link to="what-i-built" className="decoration-fuchsia-600">What I Built</Link>
                     <span className="h-1 w-1/1 group-hover:bg-fuchsia-600"></span>
                 </div>
                 <div className="flex flex-col group">
-                    <span className="decoration-fuchsia-600">How I Built</span>
+                    <Link to="how-i-built" className="decoration-fuchsia-600">How I Built</Link>
                     <span className="h-1 w-1/1 group-hover:bg-fuchsia-600"></span>
                 </div>
-                <button className="px-4 py-2 text-white font-semibold rounded bg-gra-btn">Visit Projects <span className="">&#8594;</span></button>
+                <button className="px-4 py-2 text-white font-semibold rounded bg-fuchsia-600 hover:bg-fuchsia-700">Visit Projects <span className="">&#8594;</span></button>
             </div>
         </nav>
     )
