@@ -6,7 +6,7 @@ import Container from '../../container'
 const AboutMe = () => {
     return (
         <Container>
-            <div className='w-1/2'>
+            <div className='w-full md:w-1/2'>
                 <h2 className='capitalize text-5xl font-["Open_Sans"] font-bold text-gray-100 px-6'>Whats about me</h2>
                 <div className="h-1 mx-10 w-1/3 bg-fuchsia-600 mb-8"></div>
                 <p className='text-slate-300 leading-relaxed text-xl font-normal indent-20 font-serif px-6'><span className='text-5xl font-semibold'>I</span> build modern front-end applications with the latest tools and technologies that are highly popular on the internet.I have two-year
@@ -17,7 +17,7 @@ const AboutMe = () => {
                 </p>
                 <button className="px-4 py-2 m-10 text-white font-semibold cursor-pointer rounded bg-fuchsia-600 hover:bg-fuchsia-700">Download Resume</button>
             </div>
-            <div className='w-1/2 px-4'>
+            <div className='w-full md:w-1/2 px-4'>
                 <img
                     src={diary}
                     alt="aboutShahzain-about"
