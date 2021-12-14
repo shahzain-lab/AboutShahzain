@@ -19,77 +19,77 @@ const Slides = () => {
                 src={reactlogo}
                 alt="aboutshahzain-react"
                 title="aboutshahzain-react"
-                className="border-2 border-gray-500 px-4"
+                className=" brightness-75 hover:brightness-100"
                 width={150}
             />
             <img
                 src={apollologo}
                 alt="aboutshahzain-redux"
                 title="aboutshahzain-redux"
-                className="border-2  border-gray-500 p-4"
+                className=" brightness-75 hover:brightness-100 py-4"
                 width={150}
             />
             <img
                 src={reduxlogo}
                 alt="aboutshahzain-js"
                 title="aboutshahzain-js"
-                className="border-2  border-gray-500 p-4"
+                className="  brightness-70 hover:brightness-100 py-4"
                 width={170}
             />
             <img
                 src={graphqllogo}
                 alt="aboutshahzain-graphql"
                 title="aboutshahzain-graphql"
-                className="border-2 border-gray-500 p-4"
+                className=" brightness-75 hover:brightness-100 py-4"
                 width={150}
             />
             <img
                 src={jslogo}
                 alt="aboutshahzain-graphql"
                 title="aboutshahzain-js"
-                className="border-2 border-gray-500 p-4"
+                className=" brightness-75 hover:brightness-100 py-4"
                 width={150}
             />
             <img
                 src={muilogo}
                 alt="aboutshahzain-apollo"
                 title="aboutshahzain-mui"
-                className="border-2 border-gray-500 py-4"
+                className=" brightness-75 hover:brightness-100 py-4"
                 width={150}
             />
             <img
                 src={typescript}
                 alt="aboutshahzain-typescript"
                 title="aboutshahzain-typescript"
-                className="border-2 border-gray-500 p-4"
+                className=" brightness-75 hover:brightness-100 p-4"
                 width={150}
             />
             <img
                 src={tailwind}
                 alt="aboutshahzain-graphql"
                 title="aboutshahzain-tailwind"
-                className="border-2 border-gray-500 p-4"
+                className=" brightness-75 hover:brightness-100 p-4"
                 width={150}
             />
             <img
                 src={sass}
                 alt="aboutshahzain-graphql"
                 title="aboutshahzain-sass"
-                className="border-2 border-gray-500 p-4"
+                className=" brightness-75 hover:brightness-100 p-4"
                 width={150}
             />
             <img
                 src={netlify}
                 alt="aboutshahzain-graphql"
                 title="aboutshahzain-sass"
-                className="border-2 border-gray-500 p-4"
+                className=" brightness-75 hover:brightness-100 p-4"
                 width={150}
             />
             <img
                 src={firebase}
                 alt="aboutshahzain-graphql"
                 title="aboutshahzain-sass"
-                className="border-2 border-gray-500 py-4"
+                className=" brightness-75 hover:brightness-100 py-4"
                 width={200}
             />
 
@@ -97,7 +97,7 @@ const Slides = () => {
                 src={mirage}
                 alt="aboutshahzain-mirage"
                 title="aboutshahzain-mui"
-                className="border-2 border-gray-500 p-4"
+                className=" brightness-75 hover:brightness-100 p-4"
                 width={150}
             />
         </section>

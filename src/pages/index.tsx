@@ -1,6 +1,7 @@
 import React from 'react'
 import AboutMe from '../components/Home/aboutMe/AboutMe'
 import Header from '../components/Home/header/Header'
+import Services from '../components/Home/services/Services'
 import Products from '../components/Home/techstack/products'
 import Slides from '../components/Home/techstack/slides'
 import Layout from '../layout/Layout'
@@ -11,6 +12,7 @@ const index = () => {
       <Header />
       <Slides />
       <AboutMe />
+      <Services />
       <Products />
     </Layout>
   )
