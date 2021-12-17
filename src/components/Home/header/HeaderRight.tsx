@@ -1,6 +1,6 @@
 import React from 'react';
 import myart from '../../../assets/myart.png';
-import puzzle from '../../../assets/Puzzle.png';
+import puzzle from '../../../assets/puzzle.png';
 import redcube from '../../../assets/redcube.png';
 import yellowcube from '../../../assets/yellowcube.png';
 import ring from '../../../assets/ring.png';
