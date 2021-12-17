@@ -8,6 +8,7 @@ import Workflow from '../components/Home/worflow/Workflow'
 import Layout from '../layout/Layout'
 
 const index = () => {
+
   return (
     <Layout>
       <Header />

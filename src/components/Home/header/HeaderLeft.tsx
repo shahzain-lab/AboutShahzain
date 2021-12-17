@@ -1,59 +1,33 @@
-import React from 'react';
-import myart from '../../../assets/myart.png';
-import puzzle from '../../../assets/Puzzle.png';
-import redcube from '../../../assets/redcube.png';
-import yellowcube from '../../../assets/yellowcube.png';
-import ring from '../../../assets/ring.png';
-import star from '../../../assets/star.png';
+import { graphql } from 'gatsby'
+import React from 'react'
 
-const HeaderLeft = () => {
+const HeaderLeft = ({ data }: any) => {
     return (
-        <div className='flex flex-col justify-center items-center w-1/2'>
-            <div className="flex w-full justify-around items-center">
-                <img
-                    src={redcube}
-                    alt="aboutShahzain-puzzle"
-                    title="aboutShahzain-puzzle"
-                    className='w-1/6'
-                />
-                <img
-                    src={star}
-                    alt="aboutShahzain-puzzle"
-                    title="aboutShahzain-puzzle"
-                    className='w-1/4'
-                />
+        <main className='flex flex-col justify-center items-center w-1/2 mb-40'>
+            <div className='pl-4'>
+                <span className='text-gray-400 font-semibold capitalize pl-2 text-lg'>meet with shahzain,</span>
+                <h2 className=' text-4xl capitalize text-gray-100 '>A passionate modern Front-End developer.</h2>
+                <p className='text-lg font-semibold text-gray-400 py-6'>A passionate modern front-end developer that aims to build softwares with the latest-state-of-the-art technologies.</p>
             </div>
-            <div className="flex w-full justify-around items-center">
-                <img
-                    src={puzzle}
-                    alt="aboutShahzain-puzzle"
-                    title="aboutShahzain-puzzle"
-                    className='w-1/5'
-                />
-                <img
-                    src={myart}
-                    alt="aboutShahzain-logo"
-                    title="aboutShahzain-logo"
-                    className='w-3/4 my-4'
-                />
-            </div>
-            <div className="flex w-full justify-around items-center">
+            <div className='flex justify-items-start items-center w-full'>
+                <button className="px-4 py-2 ml-6 text-white font-semibold rounded bg-fuchsia-600 hover:bg-fuchsia-700">Visit Projects <span className="">&#8594;</span></button>
+                <button className="px-6 py-2 ml-6 font-semibold rounded text-fuchsia-600 border-2 border-fuchsia-600 hover:border-fuchsia-700 hover:text-fuchsia-700">Hire Me</button>
 
-                <img
-                    src={ring}
-                    alt="aboutShahzain-puzzle"
-                    title="aboutShahzain-puzzle"
-                    className='w-1/6'
-                />
-                <img
-                    src={yellowcube}
-                    alt="aboutShahzain-puzzle"
-                    title="aboutShahzain-puzzle"
-                    className='w-1/6'
-                />
             </div>
-        </div>
+        </main>
+
     )
 }
 
 export default HeaderLeft
+
+export const query = graphql`
+query MainTitle {
+  pageTitle: contentfulMaintitle {
+    title
+    description {
+      raw
+    }
+  }
+}
+`

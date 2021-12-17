@@ -11,8 +11,8 @@ import HeaderLeft from './HeaderLeft';
 const Header = () => {
     return (
         <header className='w-full h-screen flex justify-between items-center'>
-            <HeaderRight />
             <HeaderLeft />
+            <HeaderRight />
         </header>
     )
 }
