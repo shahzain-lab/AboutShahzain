@@ -27,6 +27,7 @@
     "gsap": "^3.8.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-horizontal-infinite-scroll": "^1.0.2",
     "react-icons": "^4.3.1",
     "react-smooth-scrollbar": "^8.0.6",
     "smooth-scrollbar": "^8.7.0",

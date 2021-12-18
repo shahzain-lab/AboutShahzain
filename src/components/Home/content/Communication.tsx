@@ -2,7 +2,7 @@ import React from 'react'
 
 const Communication = () => {
     return (
-        <div>
+        <div className='absolute h-full w-full bg-commun-img'>
             Communication
         </div>
     )

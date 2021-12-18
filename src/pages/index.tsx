@@ -18,7 +18,7 @@ const index = () => {
       <Services />
       <Workflow />
       <Products />
-      {/* <Content /> */}
+      <Content />
     </Layout>
   )
 }

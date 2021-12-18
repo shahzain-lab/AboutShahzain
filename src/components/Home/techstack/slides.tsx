@@ -12,9 +12,12 @@ import netlify from '../../../assets/tech/netlify.png'
 import firebase from '../../../assets/tech/firebase.png'
 import mirage from '../../../assets/tech/mirage.jpg'
 
+
 const Slides = () => {
+
     return (
-        <section className='flex w-full overflow-x-scroll mt-20 mb-32'>
+        <section
+ className='flex w-full overflow-x-scroll mt-20 mb-32'>
             <img
                 src={reactlogo}
                 alt="aboutshahzain-react"

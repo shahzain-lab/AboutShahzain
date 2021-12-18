@@ -8915,6 +8915,11 @@ react-error-overlay@^6.0.9:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.9.tgz#3c743010c9359608c375ecd6bc76f35d93995b0a"
   integrity sha512-nQTTcUu+ATDbrSD1BZHr5kgSD4oF8OFjxun8uAaL8RwPBacGBNPf/yAuVVdx17N8XNzRDMrZ9XcKZHCjPW+9ew==
 
+react-horizontal-infinite-scroll@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-horizontal-infinite-scroll/-/react-horizontal-infinite-scroll-1.0.2.tgz#9a339de2bd38e4b3a316bc265122819a239532b3"
+  integrity sha512-6TcTwIHkvkWHgLd5FNQLEpIUu7xoWFBRdCXunhf6/r3zZ+Ct0+jvkKQnPz7lZC8oDIOSOYFP4iUBfHBD1FHIdQ==
+
 react-icons@^4.3.1:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.3.1.tgz#2fa92aebbbc71f43d2db2ed1aed07361124e91ca"

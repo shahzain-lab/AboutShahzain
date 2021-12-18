@@ -2,8 +2,8 @@ import React from 'react'
 
 const Availability = () => {
     return (
-        <div>
-            Availability
+        <div className='absolute h-full w-full bg-time-img'>
+            s
         </div>
     )
 }

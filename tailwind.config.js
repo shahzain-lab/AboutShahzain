@@ -5,20 +5,10 @@ module.exports = {
   theme: {
     extend: {
        backgroundImage: {
-        "gra-btn": 'linear-gradient(to right,#eb72fb, #6929f8)'
+        "resp-img": "linear-gradient(to bottom,rgba(1, 2, 8, 0.616), rgba(1, 2, 8, 0.616)),url(./assets/bg/cup_coffee.jpg)",
+        "time-img": "linear-gradient(to bottom,rgba(1, 2, 8, 0.616), rgba(1, 2, 8, 0.616)),url(./assets/bg/time.jpg)",
+        "commun-img": "linear-gradient(to bottom,rgba(1, 2, 8, 0.616), rgba(1, 2, 8, 0.616)),url(./assets/bg/commun.jpg)"
       },
-       animation: {
-         'bounce-anime': `@keyframes {
-          0%, 100% {
-            transform: translateX(-25%);
-            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-          }
-          50% {
-            transform: translateX(0);
-            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-          }
-        }`
-       }
     },
   },
   plugins: [],
