@@ -18,8 +18,8 @@ const Services = () => {
                         title="aboutshahzain-service1"
                         className='ml-6 bg-opacity-25 rounded-full p-8 bg-pink-600'
                     />
-                    <h4 className="text-xl ml-4 py-4">Application development</h4>
-                    <p>I use various frameworks to build complex web-applications.Making front-end responsive and attractive is my first priyorty.  </p>
+                    <h4 className="text-xl ml-4 py-4">Application Development</h4>
+                    <p>Begin with your concept. Then I plan, define, design, and build your viable application product.I use various frameworks to build complex web-applications.</p>
                 </article>
 
                 <article className='my-4 mx-6 shadow-2xl border-b-8 p-4 text-slate-300 border-b-indigo-500 rounded-md'>
@@ -30,7 +30,7 @@ const Services = () => {
                         className='ml-6 bg-opacity-25 rounded-full p-8 bg-indigo-600'
                     />
                     <h4 className="text-xl ml-4 py-4">Progressive Web Apps</h4>
-                    <p>Give your website a home on a desktop or mobile just like other native apps with PWA modern features.Allow me to develop your site once and it everywhere.</p>
+                    <p>Give your website a home on a desktop or mobile just like other native apps with PWA modern features.Allow me to develop your site once and runs it everywhere.</p>
                 </article>
 
                 <article className='my-4 mx-6 shadow-2xl border-b-8 p-4 text-slate-300 border-b-purple-600 rounded-md'>
@@ -40,8 +40,8 @@ const Services = () => {
                         title="aboutshahzain-service1"
                         className='ml-6 bg-opacity-25 rounded-full p-8 bg-purple-600'
                     />
-                    <h4 className="text-xl ml-4 py-4">Progressive Web Apps</h4>
-                    <p>Give your website a home on a desktop or mobile just like other native apps with PWA modern features.Allow me to develop your site once and it everywhere.</p>
+                    <h4 className="text-xl ml-4 py-4">Web Designing</h4>
+                    <p>A custom design web site provides you with a trustworthy digital presence that meets your business needs in terms of quality, branding and usability.</p>
                 </article>
             </div>
         </div>

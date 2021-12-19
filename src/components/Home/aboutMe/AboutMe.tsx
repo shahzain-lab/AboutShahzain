@@ -7,7 +7,7 @@ const AboutMe = () => {
     return (
         <Container>
             <div className='md:w-full w-1/2'>
-                <h2 className='capitalize text-5xl font-["Open_Sans"] font-bold text-gray-100 px-6'>Whats about me</h2>
+                <h2 className='capitalize text-5xl font-["Open_Sans"] font-bold text-gray-100 px-6'>Who am I</h2>
                 <div className="h-1 mx-10 w-1/3 bg-fuchsia-600 mb-8"></div>
                 <p className='text-slate-300 leading-relaxed text-xl font-normal indent-20 font-serif px-6'><span className='text-5xl font-semibold'>I</span> build modern front-end applications with the latest tools and technologies that are highly popular on the internet.I have two-year
                     of experience on building attractive and responsive front-end applications.In my learning journey,I built many cool and real-world projects that made me super confident front-end developer.Making your website blazingly fast, SEO-friendly and access-able by using frameworks like Gatsbyjs, typescript, reactjs and others.
