@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
-    "gatsby-plugin-postcss": "^5.3.0",
+    "gatsby-plugin-postcss": "^5.4.0",
     "postcss": "^8.4.4",
     "tailwindcss": "^3.0.0"
   }

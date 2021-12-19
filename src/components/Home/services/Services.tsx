@@ -10,7 +10,7 @@ const Services = () => {
                 <h4 className='text-xl font-["Open_Sans"] uppercase text-fuchsia-500'>&#9741; What I do</h4>
                 <h2 className='text-4xl text-slate-300 font-["Open_Sans"] capitalize '>My Services</h2>
             </div>
-            <div className='flex justify-around flex-col md:flex-row items-center'>
+            <div className='flex justify-around md:flex-col flex-row items-center'>
                 <article className='my-4 mx-6 shadow-2xl border-b-8 p-4 text-slate-300 border-b-pink-600 rounded-md'>
                     <img
                         src={bracket}

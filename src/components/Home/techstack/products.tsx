@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { useRef, useEffect } from 'react'
 import reactlogo from '../../../assets/tech/react.svg';
 import apollologo from '../../../assets/tech/apollo.png';
 import graphqllogo from '../../../assets/tech/graphql.png';
@@ -10,15 +10,62 @@ import tailwind from '../../../assets/tech/tailwind.png'
 import sass from '../../../assets/tech/sass.svg'
 import netlify from '../../../assets/tech/netlify.png'
 import firebase from '../../../assets/tech/firebase.png'
-import mirage from '../../../assets/tech/mirage.jpg'
+import mockLaptop from '../../../assets/home/mockLaptop.png'
+import gsap from 'gsap';
 
 
 const Products = () => {
+    const reactRef = useRef(null);
+    const apolloRef = useRef(null);
+    const reduxRef = useRef(null);
+    const graphRef = useRef(null);
+    const jsRef = useRef(null);
+    const muiRef = useRef(null);
+    const typescriptRef = useRef(null);
+    const tailwindRef = useRef(null);
+    const netlifyRef = useRef(null);
+    const firebaseRef = useRef(null);
+    const sassRef = useRef(null);
+    const gitRef = useRef(null);
+    const jestRef = useRef(null);
+    const chartRef = useRef(null);
+
+    useEffect(() => {
+        gsap.utils.toArray(
+            [
+                reactRef.current,
+                apolloRef.current,
+                reduxRef.current,
+                graphRef.current,
+                jsRef.current,
+                muiRef.current,
+                typescriptRef.current,
+                tailwindRef.current,
+                netlifyRef.current,
+                firebaseRef.current,
+                sassRef.current,
+                gitRef.current,
+                jestRef.current,
+                chartRef.current,
+            ]
+        ).forEach((el: any) => {
+            gsap.to(el, {
+                y: 30,
+                yoyo: true,
+                duration: 3,
+                repeat: -1,
+
+            })
+        })
+
+
+    }, [])
     return (
         <main className="w-full relative min-h-screen flex justify-center items-center">
             <section className='text-4xl m-auto font-bold text-slate-200'>
                 <h2>Going beyond together,</h2>
-                <h2>Form ideas to productions</h2>
+                <h2
+                >From ideas to productions</h2>
                 <div className='w-1/2 center m-auto'>
                     <img
                         src="https://assets.website-files.com/600afabc21c1827d25ce63dd/60182bb078cd0c13b6fdd938_Group%252041412-p-500.png"
@@ -26,102 +73,105 @@ const Products = () => {
                         title="aboutshahzain-products"
                         className="w-full  pt-2"
                     />
+                    <img
+                        src={mockLaptop}
+                        alt="aboutshahzain-products"
+                        title="aboutshahzain-products"
+                        className=" absolute bottom-10 "
+                        width={250}
+                    />
                 </div>
             </section>
             <section className=''>
+                {/* <Techimg img= position="top-1/4 right-10" boxRef={reactRef} />
+                <Techimg img= position="top-20 left-10" boxRef={apolloRef} /> */}
                 <img
-                    src={reactlogo}
+                    ref={reactRef} src={reactlogo}
                     alt="aboutshahzain-react"
                     title="aboutshahzain-react"
                     className="absolute blur-sm top-1/4 right-10"
-                    width={100}
+                    width={90}
                 />
                 <img
-                    src={apollologo}
+                    ref={apolloRef} src={apollologo}
                     alt="aboutshahzain-redux"
                     title="aboutshahzain-redux"
                     className="absolute blur-sm top-20 left-10"
-                    width={100}
+                    width={90}
                 />
                 <img
-                    src={reduxlogo}
+                    ref={reduxRef} src={reduxlogo}
                     alt="aboutshahzain-js"
                     title="aboutshahzain-js"
-                    className="absolute blur-sm top-0 left-1/2"
-                    width={170}
+                    className="absolute blur-sm top-10 left-1/2"
+                    width={150}
                 />
                 <img
-                    src={graphqllogo}
+                    ref={graphRef} src={graphqllogo}
                     alt="aboutshahzain-graphql"
                     title="aboutshahzain-graphql"
                     className="absolute blur-sm top-1/3 right-2/3"
-                    width={100}
+                    width={90}
                 />
                 <img
-                    src={jslogo}
+                    ref={jsRef} src={jslogo}
                     alt="aboutshahzain-graphql"
                     title="aboutshahzain-js"
                     className="absolute top-1/2 left-2/3"
-                    width={100}
+                    width={90}
                 />
                 <img
-                    src={muilogo}
+                    ref={muiRef} src={muilogo}
                     alt="aboutshahzain-apollo"
                     title="aboutshahzain-mui"
                     className="absolute bottom-1/3 left-20"
-                    width={100}
+                    width={90}
                 />
                 <img
-                    src={typescript}
+                    ref={typescriptRef} src={typescript}
                     alt="aboutshahzain-typescript"
                     title="aboutshahzain-typescript"
                     className="absolute top-24 right-1/4"
-                    width={100}
+                    width={90}
                 />
                 <img
-                    src={tailwind}
+                    ref={tailwindRef} src={tailwind}
                     alt="aboutshahzain-graphql"
                     title="aboutshahzain-tailwind"
                     className="absolute bottom-16 right-24  "
-                    width={100}
+                    width={90}
                 />
                 <img
-                    src={sass}
+                    ref={sassRef} src={sass}
                     alt="aboutshahzain-graphql"
                     title="aboutshahzain-sass"
-                    className="absolute top-0 left-1/4  "
-                    width={100}
+                    className="absolute top-10 left-1/4  "
+                    width={90}
                 />
                 <img
-                    src={netlify}
+                    ref={netlifyRef} src={netlify}
                     alt="aboutshahzain-graphql"
                     title="aboutshahzain-sass"
-                    className="absolute bottom-20 left-1/4 "
-                    width={100}
+                    className="absolute bottom-1/4 left-1/4 "
+                    width={90}
                 />
                 <img
-                    src={firebase}
+                    ref={firebaseRef} src={firebase}
                     alt="aboutshahzain-graphql"
                     title="aboutshahzain-sass"
-                    className="absolute  top-0 right-10 "
+                    className="absolute  top-16 right-10 "
                     width={200}
                 />
                 <img className="absolute bottom-20 left-16 "
-                    width={100}
-                    src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" />
+                    width={90}
+                    ref={gitRef} src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" />
                 <img className="absolute bottom-1/3 right-28 "
-                    width={100}
-                    src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg" alt="jest" />
+                    width={90}
+                    ref={jestRef} src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg" alt="jest" />
                 <img className="absolute bottom-1/2 left-10 "
-                    width={100}
-                    src="https://www.chartjs.org/media/logo-title.svg" alt="chartjs" />
-                <img
-                    src={mirage}
-                    alt="aboutshahzain-mirage"
-                    title="aboutshahzain-mui"
-                    className="absolute bottom-1/3 right-28 "
-                    width={100}
-                />
+                    width={90}
+                    ref={chartRef} src="https://www.chartjs.org/media/logo-title.svg" alt="chartjs" />
+
             </section>
 
         </main>
