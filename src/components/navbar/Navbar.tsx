@@ -12,7 +12,7 @@ const Navbar = () => {
                     title="aboutShahzain-logo"
                     className="w-1/5"
                 />
-                <span className="text-zinc-400 font-thin text-2xl">.aboutShahzin</span>
+                <span className="text-zinc-400 font-thin text-2xl">.aboutShahzain</span>
             </div>
             <div className="flex w-1/2 cursor-pointer text-zinc-300 font-normal text-lg justify-around items-center">
                 <div className="flex flex-col group ">

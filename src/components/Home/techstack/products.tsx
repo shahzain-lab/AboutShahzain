@@ -82,9 +82,7 @@ const Products = () => {
                     />
                 </div>
             </section>
-            <section className=''>
-                {/* <Techimg img= position="top-1/4 right-10" boxRef={reactRef} />
-                <Techimg img= position="top-20 left-10" boxRef={apolloRef} /> */}
+            <section>
                 <img
                     ref={reactRef} src={reactlogo}
                     alt="aboutshahzain-react"

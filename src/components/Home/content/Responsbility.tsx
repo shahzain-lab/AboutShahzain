@@ -1,11 +1,12 @@
+import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
-import resp from "../../../assets/time.jpg"
 
 const Responsbility = () => {
     return (
         <div className='w-full'>
-            <img
-                src={resp}
+            <StaticImage
+                src="../../../assets/time.jpg"
+                placeholder='blurred'
                 alt="shahzain-content-img"
                 title="shahzain-content-img"
                 className='absolute h-full w-full top-0 left-0 opacity-30'
