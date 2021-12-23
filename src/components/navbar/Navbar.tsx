@@ -16,7 +16,7 @@ const Navbar = () => {
             </div>
             <div className="flex w-1/2 cursor-pointer text-zinc-300 font-normal text-lg justify-around items-center">
                 <div className="flex flex-col group ">
-                    <span className="decoration-fuchsia-600">Home</span>
+                    <Link to="/" className="decoration-fuchsia-600">Home</Link>
                     <span className="h-1 w-1/1 duration-300 group-hover:bg-fuchsia-600"></span>
                 </div>
                 <div className="flex flex-col group duration-75">
