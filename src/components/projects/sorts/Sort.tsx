@@ -7,12 +7,11 @@ interface Props {
 
 const Sort: FC<Props> = ({ state, setState }) => {
     const techs = ['All', 'HTML', 'Sass', 'Bootstrap', 'Javascript', 'Reactjs', 'Typescript', 'Reduxjs', 'Graphql', 'Gatsbyjs', 'WAAPI', 'PWA']
-    const activeClass = 'border-white border-2 bg-gray-600 transition-all '
 
     return (
         <div className='w-full flex flex-wrap'>
             {techs.map((ele, i) => (
-                <span key={i} onClick={() => setState(ele)} className={`m-2 border-2 border-gray-600 text-lg sm:text-md 2sm:text-sm rounded-full py-2 px-6 sm:px-4 cursor-pointer text-gray-200 hover:bg-gray-600 transition-all ${state === ele ? activeClass : ''} hover:border-white`}>
+                <span key={i} onClick={() => setState(ele)} className={`m-2 border-2 border-gray-600 text-lg sm:text-md 2sm:text-sm rounded-full py-2 px-6 sm:px-4 cursor-pointer text-gray-200 hover:bg-gray-600 transition-all ${state === ele ? 'border-gray-100 bg-gray-600 ' : ''} hover:border-white`}>
                     {ele}
                 </span>
             ))}
