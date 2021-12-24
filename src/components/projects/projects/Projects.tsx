@@ -1,51 +1,66 @@
 import { graphql, StaticQuery } from 'gatsby'
-import React from 'react'
+import { renderRichText } from 'gatsby-source-contentful/rich-text'
+import React, { useState } from 'react'
+import { IProject } from '../../../interfaces/Projects.interface'
 import Sort from '../sorts/Sort'
 import Project from './Project'
 
+
 const Projects = () => {
+  const [state, setState] = useState('All')
+
   return (
     <div>
       <div className='w-screen text-center '>
-        <h1 className='text-slate-100 text-4xl mt-10 font-normal indent-20 font-serif capitalize' > Build with modern technologies</h1>
-        <p className='text-slate-300 mb-10  leading-relaxed text-xl font-normal indent-20 font-serif px-6'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, voluptatum.</p>
-        <Sort />
+        <h1 className='text-slate-100 text-4xl lg:text-3xl md:text-2xl sm:xl 2sm:text-md mt-10 font-normal indent-20 font-serif capitalize' > Build with modern technologies</h1>
+        <p className='text-slate-300 mb-10  leading-relaxed md:indent-10 sm:indent-none text-xl lg:text-lg md:text-md sm:text-sm 2sm:text-opacity-80 font-normal indent-20 font-serif px-6'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, voluptatum.</p>
+        <Sort state={state} setState={setState} />
       </div >
       <div>
         <StaticQuery
           query={
             graphql`
-                     query MyProjectsQuery {
-  allContentfulProjects {
-    edges {
-      node {
-        title
-        description {
-          raw
-        }
-        url
-        githubUrl
-        id
-        image {
-          gatsbyImageData(
-            placeholder: BLURRED
-            breakpoints: [750, 1080, 1366, 1920]
-            formats: AUTO
-          )
-        }
-      }
-    }
-  }
-} `
+             query MyProjectsQuery {
+              allContentfulProjects {
+                edges {
+                  node {
+                    title
+                    techName
+                    description {
+                      raw
+                    }
+                    url
+                    githubUrl
+                    id
+                    image {
+                      gatsbyImageData(
+                        placeholder: BLURRED
+                        breakpoints: [750, 1080, 1366, 1920]
+                        formats: AUTO
+                      )
+                    }
+                  }
+              }
+              }
+             }
+              `
           }
-          render={data => (
-            <div className='flex flex-wrap justify-around items-center w-screen'>
-              {
-                data.allContentfulProjects.edges.reverse().map(({ node }: any) => (
-                  <Project key={node.id} node={node} />
-                ))}
-            </div>
-          )
+          render={data => {
+            const dataEdges = data.allContentfulProjects.edges;
+
+            const mainTech = dataEdges.filter(({ node }: IProject) => node.techName === state)
+            return (
+              <div className='flex flex-wrap justify-around items-center w-screen lg:flex-col '>
+                {
+                  state === 'All' ?
+                    dataEdges.reverse().map(({ node }: IProject) => (
+                      <Project key={node.id} node={node} />
+                    )) : mainTech.map(({ node }: IProject) => (
+                      <Project key={node.id} node={node} />
+                    ))}
+              </div>
+            )
+          }
           }
         />
       </div>

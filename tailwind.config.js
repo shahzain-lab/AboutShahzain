@@ -18,6 +18,9 @@ module.exports = {
 
       'sm': {'max': '639px'},
       // => @media (max-width: 639px) { ... }
+
+      '2sm': {'max': '530px'}
+      // => @media (max-width: 400px) { ... }
     },
     extend: {
        backgroundImage: {
