@@ -16,14 +16,14 @@ const Footer = () => {
         <footer className="bg-black w-full">
             <main className="w-full p-6 flex justify-around items-center">
                 <div className="center relative">
-                    <h2 className="text-white font-bold leading-normal text-5xl capitalize ">Helping people making their website interactive and user friendly.</h2>
+                    <h2 className="text-white font-bold leading-normal text-5xl lg:text-3xl md:text-2xl sm:text-xl 2sm:text-lg capitalize ">Helping people making their website interactive and user friendly.</h2>
 
                     <img
                         src={markerLine}
                         alt="aboutshahzain-bike"
                         title="aboutshahzain-bike"
                         width={800}
-                        className="absolute top-10 shadow-2xl"
+                        className="absolute top-10 shadow-2xl lg:top-20 lg:w-96"
                     />
                     <a href='https://www.freepik.com/photos/character' className="cursor-context-menu" target="_blank">
                     </a>
@@ -33,17 +33,18 @@ const Footer = () => {
                     alt="aboutshahzain-bike"
                     title="aboutshahzain-bike"
                     width={400}
+                    className='md:w-2/6'
                 />
             </main>
             <div className="w-full bg-neutral-900">
-                <main className="border-y-2 flex justify-between items-center border-gray-800 w-full bg-neutral-900">
+                <main className="border-y-2 flex sm:flex-col justify-between items-center border-gray-800 w-full bg-neutral-900">
                     <img
                         src={logo}
                         alt="aboutShahzain-logo"
                         title="aboutShahzain-logo"
-                        className="w-1/5"
+                        className="w-1/5 sm:w-full"
                     />
-                    <div className="w-1/3 flex justify-around items-center">
+                    <div className="w-1/3 sm:w-full sm:my-2 flex justify-around md:w-1/2 items-center">
                         <a target="_blank" className="rounded-full p-2 border-2 border-sky-600 text-sky-600" href="https://www.facebook.com/syed.zainulabideen.77398"><FaFacebookF /></a>
                         <a target="_blank" className="rounded-full p-2 border-2 border-pink-500 text-pink-500" href="https://"><GrInstagram /></a>
                         <a target="_blank" className="rounded-full p-2 border-2 border-indigo-600 text-indigo-600" href="https://twitter.com/its_shahzain"><ImTwitter /></a>

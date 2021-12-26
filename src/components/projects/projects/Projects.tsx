@@ -50,7 +50,7 @@ const Projects = () => {
 
             const mainTech = dataEdges.filter(({ node }: IProject) => node.techName === state)
             return (
-              <div className='flex flex-wrap justify-around items-center w-screen lg:flex-col '>
+              <div className='flex flex-wrap justify-around items-center w-screen xl:flex-col '>
                 {
                   state === 'All' ?
                     dataEdges.reverse().map(({ node }: IProject) => (

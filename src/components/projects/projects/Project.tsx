@@ -11,12 +11,12 @@ const Project: FC<IProject> = ({ node }) => {
     const Image = node?.image?.gatsbyImageData
 
     return (
-        <div className='w-[45%] shadow-2xl text-center rounded-2xl m-6 text-white bg-zinc-900 lg:w-[80%] md:w-[90%] sm-[100%]'>
-            <p className='py-2 rounded-full mx-6 my-2 text-gray-400 shadow-inner bg-gray-800'>
+        <div className='w-[45%] shadow-2xl text-center rounded-2xl m-6 md:mx-0 text-white bg-zinc-900 xl:w-[80%] md:w-[90%] sm:mr-2 sm-[100%]'>
+            <p className='py-2 rounded-full mx-6 md:mx-4 my-2 text-gray-400 shadow-inner bg-gray-800'>
                 <a href={node.url} target={"_blank"}>{node.url}</a>
             </p>
             <div className='flex 2sm:flex-col-reverse w-full justify-between'>
-                <div className='w-2/5 2sm:w-full ml-6 p-4 mb-4 2sm:ml-0 text-left shadow-inner rounded-xl bg-gray-800'>
+                <div className='w-2/5 2sm:w-full ml-6 p-4 mb-4 md:ml-0 text-left shadow-inner rounded-xl bg-gray-800'>
                     <h2 className='text-xl md:text-lg sm:text-sm text-transparent bg-clip-text bg-gradient-to-br from-teal-500 to-violet-500 font-bold'>{node.title}</h2>
                     <h4 className='mt-4 '>{renderRichText(node.description)}</h4>
                 </div>
