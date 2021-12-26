@@ -3,24 +3,7 @@ import { FaAssistiveListeningSystems } from 'react-icons/fa'
 import Availability from './Availability'
 import Communication from './Communication'
 import Responsbility from './Responsbility'
-// import data from './data';
-// const data = [
-//     {
-//         id: 1,
-//         title: "Responsibility",
-//         description: "Defining software requirement from the perspective of an end-user"
-//     },
-//     {
-//         id: 1,
-//         title: "Responsibility",
-//         description: "Defining software requirement from the perspective of an end-user"
-//     },
-//     {
-//         id: 1,
-//         title: "Responsibility",
-//         description: "Defining software requirement from the perspective of an end-user"
-//     }
-// ];
+
 const Content = () => {
     const [state, setState] = useState(false);
     const [context, setContext] = useState('Availability');
@@ -28,9 +11,9 @@ const Content = () => {
     const activeClass = 'border-l-4 border-l-fuchsia-600';
 
     return (
-        <div className='h-screen w-full relative bg-black flex justify-between px-10 items-center text-white'>
+        <div className='h-screen md:min-h-screen w-full relative bg-black flex md:flex-col justify-between px-10 items-center text-white'>
 
-            <div className='w-1/2 text-center z-10'>
+            <div className='w-1/2 md:w-full text-center z-10'>
                 <div onClick={() => { setState(true); setContext('Responsibility') }} className={`cursor-pointer md:w-full w-1/2 border-2 bg-neutral-900 p-2 rounded-lg mb-8 border-slate-800 ${context === 'Responsibility' ? activeClass : ''}`}>
                     <FaAssistiveListeningSystems className='text-3xl  text-amber-400' />
                     <h3>Responsibility</h3>
@@ -47,7 +30,7 @@ const Content = () => {
                     <p>Defining software requirement from the perspective of an end-user</p>
                 </div>
             </div>
-            <div className='w-1/2'>
+            <div className='w-1/2 md:w-full'>
                 {state
                     && context === 'Responsibility' ? <Responsbility /> : context === 'Availability' ? <Availability /> : <Communication />}
             </div>

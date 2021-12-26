@@ -13,7 +13,7 @@ import { SiGmail } from 'react-icons/si';
 const Footer = () => {
     const date = new Date().getFullYear();
     return (//
-        <footer className="bg-black w-full">
+        <footer className="bg-black w-full sm:mt-36">
             <main className="w-full p-6 flex justify-around items-center">
                 <div className="center relative">
                     <h2 className="text-white font-bold leading-normal text-5xl lg:text-3xl md:text-2xl sm:text-xl 2sm:text-lg capitalize ">Helping people making their website interactive and user friendly.</h2>
@@ -54,9 +54,9 @@ const Footer = () => {
                         <a target="_blank" className="rounded-full p-2 border-2 border-lime-600 text-lime-600" href="https://myaccount.google.com/profile"><GrGooglePlus /></a>
                     </div>
                 </main>
-                <section className=" flex justify-around items-center text-zinc-400 py-4">
+                <section className=" flex sm:flex-col justify-around items-center text-zinc-400 py-4">
                     <div>
-                        <span className="text-xl font-thin text-zinc-200">About Me</span>
+                        <span className="text-xlfont-thin text-zinc-200">About Me</span>
                         <li>resume</li>
                         <li>Instagram</li>
                         <li>How I Built</li>

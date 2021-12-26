@@ -5,8 +5,6 @@ import Content from '../components/Home/content/Content'
 import Header from '../components/Home/header/Header'
 import Services from '../components/Home/services/Services'
 import Products from '../components/Home/techstack/products'
-import Slides from '../components/Home/techstack/slides'
-import Marquee from '../components/Home/techstack/Techimg'
 import Workflow from '../components/Home/worflow/Workflow'
 import { IAbout } from '../interfaces/Header.interface'
 import Layout from '../layout/Layout'
@@ -16,8 +14,6 @@ const index = ({ data }: IAbout) => {
   return (
     <Layout>
       <Header data={data} />
-      {/* <Slides />
-      <Marquee /> */}
       <AboutMe />
       <Services />
       <Workflow />

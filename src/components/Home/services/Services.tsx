@@ -6,7 +6,7 @@ import modern from '../../../assets/home/modern.svg';
 const Services = () => {
     return (
         <div className='mb-8'>
-            <div className='w-full text-center'>
+            <div className='w-full text-center my-8 md:mt-10'>
                 <h4 className='text-xl font-["Open_Sans"] uppercase text-fuchsia-500'>&#9741; What I do</h4>
                 <h2 className='text-4xl text-slate-300 font-["Open_Sans"] capitalize '>My Services</h2>
             </div>
