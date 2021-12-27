@@ -5,6 +5,7 @@ import Scrollbar from 'react-smooth-scrollbar';
 
 import SmoothScrollbar from 'smooth-scrollbar';
 import OverscrollPlugin from 'smooth-scrollbar/plugins/overscroll';
+
 SmoothScrollbar.use(OverscrollPlugin)
 
 const Layout: FC = ({ children }) => {
@@ -24,7 +25,7 @@ const Layout: FC = ({ children }) => {
             }}
         >
             <main className=' h-screen'>
-                <div className="bg-neutral-800  overflow-x-hidden">
+                <div className="bg-neutral-800 relative overflow-x-hidden">
                     <Navbar />
                     {children}
                     <Footer />

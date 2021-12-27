@@ -3,3 +3,6 @@
 @import 'tailwindcss/components';
 
 @import 'tailwindcss/utilities';
+.d {
+  color: #252525;
+}

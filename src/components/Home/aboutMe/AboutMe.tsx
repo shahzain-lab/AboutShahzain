@@ -1,7 +1,6 @@
 import { Link } from 'gatsby'
 import React from 'react'
-import diary from '../../../assets/home/diary.png'
-import Container from '../../container'
+import diary from '../../../assets/home/diary.png';
 
 const AboutMe = () => {
     return (

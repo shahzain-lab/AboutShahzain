@@ -12,10 +12,10 @@ const HeaderLeft = ({ data }: IAbout) => {
         <span className='text-gray-400 font-semibold capitalize pl-2 text-lg md:text-md md:mb-4'>meet with shahzain,</span>
 
         {data && data.contentfulMaintitle && (
-          <>
+          <div>
             <h2 className=' text-4xl md:text-2xl md:mb-2 capitalize text-gray-100 '>{data.contentfulMaintitle.title}.</h2>
             <p className='text-lg md:text-md font-semibold leading-8 text-gray-400 py-6'>{renderRichText(data.contentfulMaintitle.description)}</p>
-          </>
+          </div>
         )}
       </div>
       <div className='flex md:mt-4 justify-items-start md:justify-center items-center w-full'>
