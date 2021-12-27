@@ -23,7 +23,7 @@ const HeaderRight = () => {
     }, [])
 
     return (
-        <div className='flex md:absolute md:inset-y-0 md:left-0 md:-z-1 md:opacity-30 flex-col justify-center items-center w-1/2 md:w-full'>
+        <div className='flex md:absolute md:inset-y-0 md:left-0 md:top-20 md:brightness-50 flex-col justify-center items-center w-1/2 md:w-full'>
             <div className="flex w-full justify-around items-center">
                 <StaticImage
                     placeholder='blurred'

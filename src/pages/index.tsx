@@ -10,7 +10,7 @@ import { IAbout } from '../interfaces/Header.interface'
 import Layout from '../layout/Layout'
 
 const index = ({ data }: IAbout) => {
-  console.log(data)
+
   return (
     <Layout>
       <Header data={data} />

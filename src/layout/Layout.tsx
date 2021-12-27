@@ -19,12 +19,12 @@ const Layout: FC = ({ children }) => {
                 overscroll: {
                     effect: 'glow',
                     glowColor: '#122841',
-                    damping: 0.08
+                    damping: 0.08,
                 }
             }}
         >
             <main className=' h-screen'>
-                <div className="bg-neutral-800">
+                <div className="bg-neutral-800  overflow-x-hidden">
                     <Navbar />
                     {children}
                     <Footer />

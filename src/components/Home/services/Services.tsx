@@ -19,7 +19,7 @@ const Services = () => {
                         className='ml-6 bg-opacity-25 rounded-full p-8 bg-pink-600'
                     />
                     <h4 className="text-xl ml-4 py-4">Application Development</h4>
-                    <p>Begin with your concept. Then I plan, define, design, and build your viable application product.I use various frameworks to build complex web-applications.</p>
+                    <p>Begin with your concept. Then I plan, define, design, and build your viable application's product.I use various frameworks to build complex web-applications.</p>
                 </article>
 
                 <article className='my-4 mx-6 shadow-2xl border-b-8 p-4 text-slate-300 border-b-indigo-500 rounded-md'>

@@ -54,7 +54,7 @@ const Footer = () => {
                         <a target="_blank" className="rounded-full p-2 border-2 border-lime-600 text-lime-600" href="https://myaccount.google.com/profile"><GrGooglePlus /></a>
                     </div>
                 </main>
-                <section className=" flex sm:flex-col justify-around items-center text-zinc-400 py-4">
+                <section className=" flex justify-around items-center  text-zinc-400 py-4">
                     <div>
                         <span className="text-xlfont-thin text-zinc-200">About Me</span>
                         <li>resume</li>
