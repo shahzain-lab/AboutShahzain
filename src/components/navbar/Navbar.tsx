@@ -1,16 +1,18 @@
 import { Link } from 'gatsby';
 import React, { useState } from 'react';
-import logo from '../../assets/transLogo.png';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Navbar = () => {
     const [state, setState] = useState('open');
+
 
     return (
         <nav className="flex z-20 lg:flex-col justify-between bg-slate-700 items-center w-full h-20">
             <div className='lg:w-full flex justify-between items-center h-20'>
                 <div className="flex items-center center w-2/4">
-                    <img
-                        src={logo}
+                    <StaticImage
+                        placeholder='blurred'
+                        src={'../../assets/transLogo.png'}
                         alt="aboutShahzain-logo"
                         title="aboutShahzain-logo"
                         className="w-1/5"

@@ -1,7 +1,5 @@
 import React from 'react'
-import bracket from '../../../assets/home/brackets.svg';
-import react from '../../../assets/home/react-logo.svg';
-import modern from '../../../assets/home/modern.svg';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Services = () => {
     return (
@@ -12,8 +10,9 @@ const Services = () => {
             </div>
             <div className='flex justify-around md:flex-col flex-row items-center'>
                 <article className='my-4 mx-6 shadow-2xl border-b-8 p-4 text-slate-300 border-b-pink-600 rounded-md'>
-                    <img
-                        src={bracket}
+                    <StaticImage
+                        placeholder='blurred'
+                        src={'../../../assets/home/brackets.svg'}
                         alt="aboutshahzain-service1"
                         title="aboutshahzain-service1"
                         className='ml-6 bg-opacity-25 rounded-full p-8 bg-pink-600'
@@ -23,8 +22,9 @@ const Services = () => {
                 </article>
 
                 <article className='my-4 mx-6 shadow-2xl border-b-8 p-4 text-slate-300 border-b-indigo-500 rounded-md'>
-                    <img
-                        src={react}
+                    <StaticImage
+                        placeholder='blurred'
+                        src={'../../../assets/home/react-logo.svg'}
                         alt="aboutshahzain-service1"
                         title="aboutshahzain-service1"
                         className='ml-6 bg-opacity-25 rounded-full p-8 bg-indigo-600'
@@ -34,8 +34,9 @@ const Services = () => {
                 </article>
 
                 <article className='my-4 mx-6 shadow-2xl border-b-8 p-4 text-slate-300 border-b-purple-600 rounded-md'>
-                    <img
-                        src={modern}
+                    <StaticImage
+                        placeholder='blurred'
+                        src={'../../../assets/home/modern.svg'}
                         alt="aboutshahzain-service1"
                         title="aboutshahzain-service1"
                         className='ml-6 bg-opacity-25 rounded-full p-8 bg-purple-600'

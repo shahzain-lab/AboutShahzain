@@ -46,7 +46,7 @@ module.exports = {
           }
         ]
       },
-    },,
+    },
     `gatsby-plugin-offline`,
     {
       resolve: "gatsby-source-filesystem",

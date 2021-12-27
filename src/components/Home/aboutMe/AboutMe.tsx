@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react'
-import diary from '../../../assets/home/diary.png';
 
 const AboutMe = () => {
     return (
@@ -14,11 +14,12 @@ const AboutMe = () => {
                     curious about what I
                     built.please take a few minutes and <Link to="what-i-built" className='font-semibold text-fuchsia-600 hover:text-pink-700'>checkout &rarr;</Link>
                 </p>
-                <button className="px-4 md:px-2 py-2 m-10 text-white font-semibold cursor-pointer rounded bg-fuchsia-600 hover:bg-fuchsia-700">Download Resume</button>
+                <a href="../../../assets/home/diary.png" download><button className="px-4 md:px-2 py-2 m-10 text-white font-semibold cursor-pointer rounded bg-fuchsia-600 hover:bg-fuchsia-700">Download Resume</button></a>
             </div>
             <div className='lg:w-full w-1/2 px-4'>
-                <img
-                    src={diary}
+                <StaticImage
+                    placeholder='blurred'
+                    src={'../../../assets/home/diary.png'}
                     alt="aboutShahzain-about"
                     title="aboutShahzain-about"
                     className="w-full"

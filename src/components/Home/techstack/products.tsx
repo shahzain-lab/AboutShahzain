@@ -82,7 +82,7 @@ const Products = () => {
                     />
                 </div>
             </section>
-            <section className='md:relative md:h-1/2 md:w-full md:h-1/2'>
+            <section className='md:relative md:h-1/2 md:w-full '>
                 <img
                     ref={reactRef} src={reactlogo}
                     alt="aboutshahzain-react"

@@ -1,12 +1,12 @@
+import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { FaAssistiveListeningSystems, FaCode, FaLocationArrow } from 'react-icons/fa'
-import { HiOutlineAcademicCap } from 'react-icons/hi'
-import wave__page from '../../../assets/home/wave_page.svg'
+import { HiOutlineAcademicCap } from 'react-icons/hi';
 
 const Workflow = () => {
     return (
         <div className='bg-black py-6 text-white relative'>
-            <img src={wave__page} alt='bg-lines' className='absolute w-full mt-10 lg:top-64 lg:rotate-90' />
+            <StaticImage placeholder='blurred' src={'../../../assets/home/wave_page.svg'} alt='bg-lines' className='absolute w-full mt-10 lg:top-64 lg:rotate-90' />
 
             <div className='w-full text-center'>
                 <h4 className=' text-xl font-["Open_Sans"] uppercase text-fuchsia-500'>&#9741; How I DO</h4>
