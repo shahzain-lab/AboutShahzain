@@ -6,7 +6,7 @@ interface Props {
 }
 
 const Sort: FC<Props> = ({ state, setState }) => {
-    const techs = ['All', 'HTML', 'Sass', 'Bootstrap', 'Javascript', 'Reactjs', 'Typescript', 'Reduxjs', 'Graphql', 'Gatsbyjs', 'WAAPI', 'PWA']
+    const techs = ['All', 'HTML', 'Sass', 'Bootstrap', 'Javascript', 'Reactjs', 'Typescript', 'Reduxjs', 'Graphql', 'WAAPI', 'PWA']
 
     return (
         <div className='w-full flex flex-wrap'>

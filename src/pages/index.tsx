@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby'
 import React from 'react'
 import AboutMe from '../components/Home/aboutMe/AboutMe'
+import Contact from '../components/Home/contact/Contact'
 import Content from '../components/Home/content/Content'
 import Header from '../components/Home/header/Header'
 import Services from '../components/Home/services/Services'
@@ -17,6 +18,7 @@ const index = ({ data }: IAbout) => {
       <AboutMe />
       <Services />
       <Workflow />
+      <Contact />
       <Products />
       <Content />
     </Layout>

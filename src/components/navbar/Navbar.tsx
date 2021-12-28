@@ -48,7 +48,7 @@ const Navbar = () => {
                     <Link to="/how-i-built/" activeClassName='border-b-4 rounded-lg border-b-fuchsia-600 ' className="decoration-fuchsia-600">How I Built</Link>
                     <span className="h-1 w-1/1 rounded-full group-hover:bg-fuchsia-600"></span>
                 </div >
-                <button className=" px-4 py-2 text-white font-semibold rounded bg-fuchsia-600 hover:bg-fuchsia-700">Visit Projects <span className="">&#8594;</span></button>
+                <Link to="what-i-built"> <button className=" px-4 py-2 text-white font-semibold rounded bg-fuchsia-600 hover:bg-fuchsia-700">Visit Projects <span className="">&#8594;</span></button></Link>
             </div >
             {
                 state === '!open' ? (
@@ -65,7 +65,7 @@ const Navbar = () => {
                             <Link to="/how-i-built/" activeClassName='border-b-4 rounded-lg border-b-fuchsia-600 ' className="decoration-fuchsia-600">How I Built</Link>
                             <span className="h-1 w-1/1 rounded-full group-hover:bg-fuchsia-600"></span>
                         </div >
-                        <button className=" lg:border-2 lg:w-full lg:my-2 lg:hover:bg-gray-500 lg:border-gray-700 lg:rounded-3xl lg:mx-4  px-4 py-2 text-white font-semibold rounded bg-fuchsia-600 hover:bg-fuchsia-700">Visit Projects <span className="">&#8594;</span></button>
+                        <Link to="what-i-built"> <button className=" lg:border-2 lg:w-full lg:my-2 lg:hover:bg-gray-500 lg:border-gray-700 lg:rounded-3xl lg:mx-4  px-4 py-2 text-white font-semibold rounded bg-fuchsia-600 hover:bg-fuchsia-700">Visit Projects <span className="">&#8594;</span></button></Link>
                     </div >
                 )
                     : (
