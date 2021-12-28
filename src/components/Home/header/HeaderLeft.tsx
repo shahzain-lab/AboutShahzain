@@ -20,7 +20,7 @@ const HeaderLeft = ({ data }: IAbout) => {
       </div>
       <div className='flex md:mt-4 justify-items-start md:justify-center items-center w-full'>
         <Link to="what-i-built"> <button className="px-4 md:px-2 py-2 ml-6 text-white font-semibold rounded bg-fuchsia-600 hover:bg-fuchsia-700">Visit Projects <span className="">&#8594;</span></button></Link>
-        <button className="px-6 md:px-4 py-2 ml-6 font-semibold rounded text-fuchsia-600 border-2 border-fuchsia-600 hover:border-fuchsia-700 hover:text-fuchsia-700">Hire Me</button>
+        <a href="https://www.upwork.com/freelancers/~019d156914c7807c47?viewMode=1&s=1110580755057594368" target={'_blank'}><button className="px-6 md:px-4 py-2 ml-6 font-semibold rounded text-fuchsia-600 border-2 border-fuchsia-600 hover:border-fuchsia-700 hover:text-fuchsia-700">Hire Me</button></a>
 
       </div>
     </main>

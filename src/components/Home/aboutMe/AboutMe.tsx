@@ -1,5 +1,6 @@
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image';
+import resume from '../../../assets/resume/resume.png'
 import React from 'react'
 
 const AboutMe = () => {
@@ -14,7 +15,7 @@ const AboutMe = () => {
                     curious about what I
                     built.please take a few minutes and <Link to="what-i-built" className='font-semibold text-fuchsia-600 hover:text-pink-700'>checkout &rarr;</Link>
                 </p>
-                <a href="../../../assets/home/diary.png" download><button className="px-4 md:px-2 py-2 m-10 text-white font-semibold cursor-pointer rounded bg-fuchsia-600 hover:bg-fuchsia-700">Download Resume</button></a>
+                <a href={resume} download={resume}><button className="px-4 md:px-2 py-2 m-10 text-white font-semibold cursor-pointer rounded bg-fuchsia-600 hover:bg-fuchsia-700">Download Resume</button></a>
             </div>
             <div className='lg:w-full w-1/2 px-4'>
                 <StaticImage

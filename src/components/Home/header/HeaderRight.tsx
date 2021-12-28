@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import gsap from 'gsap/all';
 
@@ -12,6 +12,7 @@ const HeaderRight = () => {
             yoyo: true,
             repeat: -1,
         })
+        gsap.to('.star', 2, { rotation: 360, duration: 5 });
         gsap.utils.toArray(['.redcube', '.yellowcube']).forEach((el: any) => {
             gsap.to(el, {
                 rotation: '360',
@@ -37,7 +38,7 @@ const HeaderRight = () => {
                     src='../../../assets/star.png'
                     alt="aboutShahzain-puzzle"
                     title="aboutShahzain-puzzle"
-                    className='w-1/4 md:w-24 puzzle'
+                    className='w-1/4 md:w-24 puzzle star'
                 />
             </div>
             <div className="flex w-full justify-around items-center">

@@ -7,7 +7,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://www.aboutshahzain.netlify.app",
     title: "aboutshahzain",
   },
   plugins: [
@@ -15,7 +15,7 @@ module.exports = {
       resolve: "gatsby-source-contentful",
       options: {
         spaceId: '4gw3jsxtpa2w',
-        accessToken: '9KJJXPwZaCj-pXrQV-9ySrD47KHoIhdII_S33QMoXY0',
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     "gatsby-plugin-image",
@@ -35,12 +35,12 @@ module.exports = {
         icon: `src/assets/logo.jpg`,
         icons: [
           {
-            src: `src/assets/transLogo.png`,
+            src: `src/assets/logo.jpg`,
             sizes: `192x192`,
             type: `image/png`
           },
           {
-            src: `src/assets/transLogo.png`,
+            src: `src/assets/logo.jpg`,
             sizes: `512x512`,
             type: `image/png`
           }
