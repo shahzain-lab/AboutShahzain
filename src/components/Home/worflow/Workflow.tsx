@@ -6,7 +6,7 @@ import { HiOutlineAcademicCap } from 'react-icons/hi';
 const Workflow = () => {
     return (
         <div className='bg-black py-6 text-white relative'>
-            <StaticImage placeholder='blurred' src={'../../../assets/home/wave_page.svg'} alt='bg-lines' className='absolute w-full mt-10 lg:top-64 lg:rotate-90' />
+            <StaticImage placeholder='blurred' src={'../../../assets/home/wave_page.svg'} alt='bg-lines' className='absolute w-full my-auto lg:top-64 lg:rotate-90' />
 
             <div className='w-full text-center'>
                 <h4 className=' text-xl font-["Open_Sans"] uppercase text-fuchsia-500'>&#9741; How I DO</h4>

@@ -15,7 +15,7 @@ module.exports = {
       resolve: "gatsby-source-contentful",
       options: {
         spaceId: '4gw3jsxtpa2w',
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        accessToken: '9KJJXPwZaCj-pXrQV-9ySrD47KHoIhdII_S33QMoXY0',
       },
     },
     "gatsby-plugin-image",
@@ -32,7 +32,7 @@ module.exports = {
         background_color: `#252525`,
         theme_color: `#252525`,
         display: `standalone`,
-        icon: `src/assets/transLogo.png`,
+        icon: `src/assets/logo.jpg`,
         icons: [
           {
             src: `src/assets/transLogo.png`,

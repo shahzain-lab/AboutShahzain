@@ -11,10 +11,10 @@ const Content = () => {
     const activeClass = 'border-l-4 border-l-fuchsia-600';
 
     return (
-        <div className='h-screen lg:min-h-screen md:pb-4 w-full relative bg-black flex lg:flex-col justify-between px-10 items-center text-white'>
+        <div className='min-h-screen lg:min-h-screen md:pb-4 w-full relative bg-black flex lg:flex-col justify-between px-10 items-center text-white'>
 
             <div className='w-1/2 lg:w-full text-center z-10'>
-                <div onClick={() => { setState(true); setContext('Responsibility') }} className={`cursor-pointer lg:w-full w-1/2 border-2 bg-neutral-900 p-2 rounded-lg mb-8 md:mb-4 sm:mb-2 border-slate-800 ${context === 'Responsibility' ? activeClass : ''}`}>
+                <div onClick={() => { setState(true); setContext('Responsibility') }} className={`cursor-pointer mt-2 lg:w-full w-1/2 border-2 bg-neutral-900 p-2 rounded-lg mb-8 md:mb-4 sm:mb-2 border-slate-800 ${context === 'Responsibility' ? activeClass : ''}`}>
                     <StaticImage placeholder='blurred' alt="aboutShahzain-content" src={'../../../assets/blocks/response.png'} className='w-1/3 lg:w-1/5 sm:1/6 mx-auto' />
                     <h3 className='text-xl lg:text-md sm:text-[12px]'>Responsibility</h3>
                     <p className='lg:text-sm sm:text-[8px]'>Delivering your production ready ideas on time</p>
