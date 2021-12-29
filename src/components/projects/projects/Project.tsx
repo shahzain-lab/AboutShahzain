@@ -30,10 +30,10 @@ const Project: FC<IProject> = ({ node }) => {
                         />
                     </div>
                     <div className='flex justify-evenly h-14 text-xl items-center shadow-inner rounded-xl bg-gray-800 mb-4 mt-2 mx-2'>
-                        <span className='flex  rounded-full bg-gray-900 p-2'>
+                        {/* <span className='flex  rounded-full bg-gray-900 p-2'>
                             <span className='text-2xl cursor-pointer'><AiFillLike /></span>
                             <span className='text-sm pl-4 pt-2'>{232}</span>
-                        </span>
+                        </span> */}
                         <a href={node.githubUrl} target={'_blank'} className='rounded-full bg-gray-900 p-4'><BsGithub /></a>
                         <a href={node.url} target={'_blank'} className='rounded-full bg-gray-900 p-4'><FiExternalLink /></a>
                     </div>

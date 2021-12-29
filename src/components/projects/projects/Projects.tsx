@@ -53,7 +53,7 @@ const Projects = () => {
               <div className='flex flex-wrap justify-around items-center w-screen xl:flex-col '>
                 {
                   state === 'All' ?
-                    dataEdges.reverse().map(({ node }: IProject) => (
+                    dataEdges.map(({ node }: IProject) => (
                       <Project key={node.id} node={node} />
                     )) : mainTech.map(({ node }: IProject) => (
                       <Project key={node.id} node={node} />
